@@ -13,7 +13,7 @@ public class TestPathFinder : MonoBehaviour
 
     GameObject objStartCube, objEndCube, cylinder;
 
-    private float elapsedTime = 0.0f;
+    private float elapsedTime = 1.0f;
     public float intervalTime = 1.0f; //Interval time between path finding
 
     // Use this for initialization
@@ -25,7 +25,7 @@ public class TestPathFinder : MonoBehaviour
         
         // Starting the agent (cylinder) at the red cube's position
         cylinder.transform.position = objStartCube.transform.position;
-        Debug.Log("CYLINDER POSITION: " + cylinder.transform.position);
+        Debug.Log("ORIGINAL CYLINDER POSITION: " + cylinder.transform.position);
         
         //AStar Calculated Path
         pathArray1 = new ArrayList();
@@ -42,7 +42,7 @@ public class TestPathFinder : MonoBehaviour
 
         if (elapsedTime >= intervalTime)
         {
-            elapsedTime = 0.0f;
+            elapsedTime = 2.0f;
             FindPath();
         }
 

@@ -35,11 +35,6 @@ public class PathFinder : MonoBehaviour
         return vecCost.magnitude;
     }
 
-    
-
-
-
-
     public static ArrayList DFS(Node start, Node goal)
     {
         //Start Finding the path
