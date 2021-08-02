@@ -82,7 +82,9 @@ public class TestPathFinder : MonoBehaviour
                 if (index < pathArray1.Count)
                 {
                     Node nextNode = (Node)pathArray1[index];
-                    Debug.DrawLine(node.position, nextNode.position, Color.green);
+
+                    // Trace a yellow line at current node
+                    Debug.DrawLine(node.position, nextNode.position, Color.yellow);
 
                     index++;
                 }

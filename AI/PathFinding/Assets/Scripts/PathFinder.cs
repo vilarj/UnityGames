@@ -111,7 +111,9 @@ public class PathFinder : MonoBehaviour
         return CalculatePath(node);
     }
 
-
+    void AStar() {
+        
+    }
 
     
 }
